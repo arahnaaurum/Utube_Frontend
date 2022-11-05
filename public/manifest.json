@@ -1,0 +1,15 @@
+{
+  "short_name": "Utube",
+  "name": "Utube Video Platform",
+  "icons": [
+    {
+      "src": "buddha.png",
+      "type": "image/png",
+      "sizes": "97x100"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
