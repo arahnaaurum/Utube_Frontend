@@ -1,0 +1,33 @@
+.subscribe_button {
+    border: none;
+    border-radius: 10px;
+    background-color: darkcyan;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.subscribe_button:hover {
+    background-color: cornflowerblue;
+    transform: scale(0.9);
+}
+
+.unsubscribe_button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35, 175, 93);
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.unsubscribe_button:hover {
+    background-color: cornflowerblue;
+    transform: scale(0.9);
+}

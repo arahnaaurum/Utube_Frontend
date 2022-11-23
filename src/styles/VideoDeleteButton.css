@@ -1,0 +1,17 @@
+
+.video-delete-button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35, 175, 93);
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.video-delete-button:hover {
+    background-color: cornflowerblue;
+    transform: scale(0.9);
+}
