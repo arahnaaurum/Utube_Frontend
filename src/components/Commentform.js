@@ -8,7 +8,6 @@ export function Commentform (props) {
     let params = useParams();
     let video_id = params.id;
     const id = props.authorId;
-
     const [comment, setComment] = useState('');
     
     const dispatch = useDispatch();
@@ -32,19 +31,12 @@ export function Commentform (props) {
         const newComments = await newCommentsRawResponse.json();
         dispatch(setComments(newComments['results']));
         setComment('');
-
-        // fetch(`http://127.0.0.1:8000/api/comment/?video_id=${video_id}`)
-        // .then(response => response.json())
-        // .then((result) => {
-        //     dispatch(setComments(result['results']));
-        //     setComment('');
-        // });
     }
 
     return (
-        <form className="comment-form" onSubmit={handleSubmit}>
-            <input className="comment-form-field" type='text' placeholder="Comment" value={comment} onChange={(event) => setComment(event.target.value)}></input>
-            <button className="comment-form-button" type="submit">Post Comment</button>
-        </form>
+            <form className="comment-form" onSubmit={handleSubmit}>
+                <input className="comment-form-field" type='text' placeholder="Comment" value={comment} onChange={(event) => setComment(event.target.value)}></input>
+                <button className="comment-form-button" type="submit">Post Comment</button>
+            </form>
       );
 }

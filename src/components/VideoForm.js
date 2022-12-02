@@ -5,7 +5,7 @@ import '../styles/VideoForm.css';
 
 
 export function VideoForm() {
-    const { id, authorId } = useSelector((state) => state.profile);
+    const { id, authorId, isBanned } = useSelector((state) => state.profile);
     const dispatch = useDispatch();
 
     const [title, setTitle] = useState('');
@@ -15,7 +15,7 @@ export function VideoForm() {
 
     async function loadVideo(event) {
         event.preventDefault();
-
+        console.log(file.type);
         let formData = new FormData();
 
         formData.append('author', authorId);
@@ -23,8 +23,11 @@ export function VideoForm() {
         formData.append('description', description);
         formData.append('hashtags', `{ ${hashtags} }`);
         
-        if (file !== null) {
-            formData.append('file', file)
+        if (file !== null && file.type.includes('video')) {
+            formData.append('file', file);
+        } else {
+            alert('Please load video file');
+            return null
         }
 
         const response = await fetch('http://127.0.0.1:8000/api/video/', {
@@ -50,10 +53,10 @@ export function VideoForm() {
 
     return <div className='video-form-container'>
         Load your video:
-        {authorId ? <form className="video-form" onSubmit={loadVideo}>
+        {authorId && !isBanned ? <form className="video-form" onSubmit={loadVideo}>
             <input className="video-form-field" type='text' value={title} placeholder="Title" onChange={(event) => setTitle(event.target.value)}></input>
             <input className="video-form-field" type='text' value={description} placeholder="Description" onChange={(event) => setDescription(event.target.value)}></input>
-            <input className="video-form-field" type='file' value={file} onChange={(event) => setFile(event.target.files[0])}></input>
+            <input className="video-form-field" type='file' accept="video/*" onChange={(event) => setFile(event.target.files[0])}></input>
             <input className="video-form-field" type='text' value={hashtags} placeholder="Hashtags" onChange={(event) => setHashtags(event.target.value)}></input>
             <button className="video-form-button" type="submit">Load Video</button>
         </form>
