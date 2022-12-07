@@ -1,7 +1,8 @@
 import { SET_VIDEO, FILTER_VIDEO, GET_SUB_VIDEO } from "./actions"
 
 const initialState = {
-    listOfVideos: []
+    listOfVideos: [],
+    listOfSubVideos: []
 }
   
 export const videoReducer = (state = initialState, action) => {
@@ -19,7 +20,7 @@ export const videoReducer = (state = initialState, action) => {
       case GET_SUB_VIDEO:
           return {
             ...state,
-            listOfVideos: action.payload,
+            listOfSubVideos: action.payload,
           }
         default:
           return state

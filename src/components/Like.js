@@ -65,7 +65,7 @@ export function Like(props) {
                                                 610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z"/>
             </g>
         </svg>}
-        <svg onClick={() => { deleteLike() }} className='dislike_svg' version="1.0" width="13pt" height="12pt" viewBox="0 0 1280.000000 1189.000000" preserveAspectRatio="xMidYMid meet">
+        {id && <svg onClick={() => { deleteLike() }} className='dislike_svg' version="1.0" width="13pt" height="12pt" viewBox="0 0 1280.000000 1189.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
                                                 -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
@@ -77,7 +77,7 @@ export function Like(props) {
                                                 -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
                                                 610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z"/>
             </g>
-        </svg>
+        </svg>}
     </>
 
 }
