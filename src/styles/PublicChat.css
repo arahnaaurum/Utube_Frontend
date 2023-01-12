@@ -1,0 +1,138 @@
+#chatlist_container {
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+.chat_info {
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat_link {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.chat_link:hover {
+    color: cornflowerblue;
+}
+
+.btn_chat {
+    border: none;
+    border-radius: 10px;
+    background-color: darkcyan;
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+}
+
+.btn_chat:hover {
+    background-color: cornflowerblue;
+}
+
+.chattitle {
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(1, 70, 70);
+}
+
+.input_container {
+    max-width: 750px;
+    display: flex;
+    gap: 64px;
+    margin-top: 40px;
+}
+
+#chatName,
+.msginput {
+    max-width: 80%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    color: darkcyan;
+    border: rgb(1, 96, 96) solid 2px;
+}
+
+.msgblock {
+    max-width: 850px;
+    gap: 20px;
+    min-height: 100px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(1, 70, 70);
+    background-color: white;
+    margin-bottom: 10px;
+    border: rgb(1, 96, 96) solid 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#btn_users {
+    border: none;
+    border-radius: 10px;
+    background-color: darkcyan;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#btn_users:hover {
+    background-color: cornflowerblue;
+}
+
+.total_container {
+    max-width: 860px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.textarea {
+    min-height: 600px;
+    width: 600px;
+    color: rgb(1, 70, 70);
+    font-size: 20px;
+    border: 3px solid rgb(109, 192, 192);
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.userlist_container {
+    width: 350px;
+    margin: auto;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-pic {
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.username {
+    text-decoration: none;
+    color: rgb(1, 70, 70);
+    font-size: 20px;
+}
+
+.chat_greet {
+    color: rgb(1, 70, 70);
+}

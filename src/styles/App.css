@@ -1,6 +1,151 @@
-.App {
-  text-align: center;
-}
 .App-header {
-  color:antiquewhite;
+  width: 100%;
+  height:100px;
+  background-color: rgba(0, 139, 139, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.header_title {
+  text-decoration: none;
+  color: white;
+}
+
+.header_button {
+  fill: lightcyan;
+  transition: 0.3s;
+}
+
+.header_button:hover {
+  fill: cornflowerblue;
+  transform: scale(1.5);
+}
+
+.header_menu {
+  border-radius: 20px;
+  border: darkcyan 1px solid;
+  box-sizing: content-box;
+  padding: 40px 36px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: lightcyan;
+}
+
+.header_list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.header_link {
+  font-size: 20px;
+  transition: 0.3s;
+  margin-bottom: 24px;
+}
+
+.header_link:hover {
+  transform: scale(0.95)
+ }
+
+.header_link_inner {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+.header_link_inner:hover {
+ color: cornflowerblue;
+}
+
+.main_container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start_greeting_text {
+  font-size: 20px;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+#send-push__form {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.start_pushform_header {
+  color: darkcyan;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 16px;
+}
+.error {
+  display: none;
+}
+
+.start_pushform_head {
+  width: 100%;
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  -khtml-border-radius: 10px; /* KHTML */
+  border-radius: 10px; /* CSS3 */
+  border: darkcyan 1px solid;
+}
+
+.start_pushform_body {
+  width: 100%;
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  -khtml-border-radius: 10px; /* KHTML */
+  border-radius: 10px; /* CSS3 */
+  border: darkcyan 1px solid;
+}
+
+.start_pushform_button {
+  border: none;
+  border-radius: 10px;
+  background-color: darkcyan;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.start_pushform_button:hover {
+  background-color: cornflowerblue;
+  transform: scale(1.2);
+}
+
+.App-main {
+  box-sizing: border-box;
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.App-footer {
+  min-height: 80px;
+  width: 100%;
+  background-color: rgba(0, 139, 139);
+  padding: 16px 30px;
+  text-align: center;
+  box-sizing: border-box;
 }

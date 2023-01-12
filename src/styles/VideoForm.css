@@ -1,0 +1,42 @@
+.video-form-container {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.video-form {
+    display: flex;
+    gap: 20px;
+}
+
+.video-form-field {
+    border-radius: 10px;
+}
+
+.video-form-button {
+    border: none;
+    border-radius: 10px;
+    background-color:lightcyan;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+
+.video-form-button:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.2);
+}
+
+@media (max-width: 750px) {
+    .video-form-container {
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    .video-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
