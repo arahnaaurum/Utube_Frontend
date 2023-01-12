@@ -1,0 +1,41 @@
+.login-form-container {
+    padding-top: 50px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-form-field {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.login-form-button {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color:lightcyan;
+    padding: 14px 24px;
+    transition: 0.3s;
+    background-color: darkcyan;
+}
+
+.login-form-button:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.2);
+}
+
+@media (max-width: 750px) {
+    .login-form-container {
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    .login-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}

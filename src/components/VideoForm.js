@@ -52,7 +52,7 @@ export function VideoForm() {
     }
 
     return <div className='video-form-container'>
-        Load your video:
+        <p>Load your video:</p>
         {authorId && !isBanned ? <form className="video-form" onSubmit={loadVideo}>
             <input className="video-form-field" type='text' value={title} placeholder="Title" onChange={(event) => setTitle(event.target.value)}></input>
             <input className="video-form-field" type='text' value={description} placeholder="Description" onChange={(event) => setDescription(event.target.value)}></input>
@@ -61,7 +61,7 @@ export function VideoForm() {
             <button className="video-form-button" type="submit">Load Video</button>
         </form>
             :
-            <p>Become our author to load videos</p>
+            <p>Please check your Personal Page to become our author</p>
         }
     </div>
 }
